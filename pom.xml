@@ -46,7 +46,6 @@
         <module>assetconnection/opcua</module>
         <module>assetconnection/http</module>
         <module>dataformat/json</module>
-        <module>starter</module>
         <module>test</module>
     </modules>
     <scm>
