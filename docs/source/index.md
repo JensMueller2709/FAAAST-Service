@@ -2,7 +2,7 @@
 
 ![FA³ST Logo Light](../images/Fa3st-Service_positiv.png "FA³ST Service Logo")
 
-The **F**raunhofer **A**dvanced **A**sset **A**dministration **S**hell **T**ools (**FA³ST**) Service implements the [Asset Administration Shell (AAS) specification from the platform Industrie 4.0](https://www.plattform-i40.de/SiteGlobals/IP/Forms/Listen/Downloads/EN/Downloads_Formular.html?cl2Categories_TechnologieAnwendungsbereich_name=Verwaltungsschale) and builds an easy-to-use web service based on a custom AAS model instance. If you are not familiar with AAS you can find additional information [here](##about-the-project).
+The **F**raunhofer **A**dvanced **A**sset **A**dministration **S**hell **T**ools (**FA³ST**) Service implements the [Asset Administration Shell (AAS) specification from the platform Industrie 4.0](https://www.plattform-i40.de/SiteGlobals/IP/Forms/Listen/Downloads/EN/Downloads_Formular.html?cl2Categories_TechnologieAnwendungsbereich_name=Verwaltungsschale) and builds an easy-to-use web service based on a custom AAS model instance. If you are not familiar with AAS you can find additional information.
 
 | FA³ST Service is still under development. Contributions in form of issues and pull requests are highly welcome. |
 |-----------------------------|
@@ -42,7 +42,7 @@ To start the Service from command line use the following commands.
 cd /starter/target
 java -jar starter-{version}.jar -m {path/to/your/AASEnvironment}
 ```
-For further information on using the command line see [here](##usage-with-command-line).
+For further information on using the command line see.
 
 #### As Maven Dependency
 ```xml
@@ -97,7 +97,7 @@ Afterwards, you can reach the running FA³ST Service via `http://localhost:8080/
 
 FA³ST Service provides the following functionalities:
 -   supports several dataformats for the Asset Administration Shell Environment: `json, json-ld, xml, aml, rdf, opcua nodeset`
--   easy configuration via JSON file (see [details](###Configuration))
+-   easy configuration via JSON file 
 -   easily expandable with 3rd party implementations for `endpoint, messagebus, persistence, assetconnection`
 -   uses existing open source implementation of AAS datamodel and de-/serializers [admin-shell-io java serializer](https://github.com/admin-shell-io/java-serializer) and [admin-shell-io java model](https://github.com/admin-shell-io/java-model)
 -   synchronization between multiple endpoints
@@ -580,7 +580,7 @@ You can automatically format your code by running
 Additionally, you can import the eclipse formatting rules defined in _/codestyle_ into our IDE.
 
 ### Third Party License
-If you use additional dependencies please be sure that the licenses of these dependencies are compliant with our [License](##license). If you are not sure which license your dependencies have, you can run
+If you use additional dependencies please be sure that the licenses of these dependencies are compliant with our. If you are not sure which license your dependencies have, you can run
 >mvn license:aggregate-third-party-report
 
 and check the generated report in the directory `documentation/third_party_licenses_report.html`.
