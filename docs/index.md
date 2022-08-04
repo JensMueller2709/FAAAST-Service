@@ -1,6 +1,6 @@
 # FA³ST Service 
 
-![FA³ST Logo Light](../images/Fa3st-Service_positiv.png "FA³ST Service Logo")
+![FA³ST Logo Light](../documentation/images/Fa3st-Service_positiv.png "FA³ST Service Logo")
 
 The **F**raunhofer **A**dvanced **A**sset **A**dministration **S**hell **T**ools (**FA³ST**) Service implements the [Asset Administration Shell (AAS) specification from the platform Industrie 4.0](https://www.plattform-i40.de/SiteGlobals/IP/Forms/Listen/Downloads/EN/Downloads_Formular.html?cl2Categories_TechnologieAnwendungsbereich_name=Verwaltungsschale) and builds an easy-to-use web service based on a custom AAS model instance. If you are not familiar with AAS you can find additional information.
 
@@ -101,7 +101,7 @@ FA³ST Service provides the following functionalities:
 
 ## Architecture
 
-<img src="../images/fa3st-service-default-implementations.png" alt="FA³ST Service Logo" >
+<img src="../documentation/images/fa3st-service-default-implementations.png" alt="FA³ST Service Logo" >
 
 Fa³ST Service uses an open architecture and defines interfaces for most functionality. This allows for easy extension by 3rd parties. However, FA³ST Service also includes one or more  useful default implementations for each interface:
 
