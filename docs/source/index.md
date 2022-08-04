@@ -1,8 +1,8 @@
-# FA³ST Service [![Build Status](https://github.com/FraunhoferIOSB/FAAAST-Service/workflows/Maven%20Build/badge.svg)](https://github.com/FraunhoferIOSB/FAAAST-Service/actions) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/25f6aafbdb0a4b5e8ba23672ec9411e5)](https://www.codacy.com/gh/FraunhoferIOSB/FAAAST-Service/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=FraunhoferIOSB/FAAAST-Service&amp;utm_campaign=Badge_Grade) [![Docker badge](https://img.shields.io/docker/pulls/fraunhoferiosb/faaast-service.svg)](https://hub.docker.com/r/fraunhoferiosb/faaast-service/) <a href="https://sonarcloud.io/summary/new_code?id=FraunhoferIOSB_FAAAST-Service" ><img src="https://sonarcloud.io/images/project_badges/sonarcloud-white.svg" alt="SonarCloud badge" width="105"/></a>
+# FA³ST Service 
 
-![FA³ST Logo Light](./images/Fa3st-Service_positiv.png "FA³ST Service Logo")
+![FA³ST Logo Light](../images/Fa3st-Service_positiv.png "FA³ST Service Logo")
 
-The **F**raunhofer **A**dvanced **A**sset **A**dministration **S**hell **T**ools (**FA³ST**) Service implements the [Asset Administration Shell (AAS) specification from the platform Industrie 4.0](https://www.plattform-i40.de/SiteGlobals/IP/Forms/Listen/Downloads/EN/Downloads_Formular.html?cl2Categories_TechnologieAnwendungsbereich_name=Verwaltungsschale) and builds an easy-to-use web service based on a custom AAS model instance. If you are not familiar with AAS you can find additional information [here](#about-the-project).
+The **F**raunhofer **A**dvanced **A**sset **A**dministration **S**hell **T**ools (**FA³ST**) Service implements the [Asset Administration Shell (AAS) specification from the platform Industrie 4.0](https://www.plattform-i40.de/SiteGlobals/IP/Forms/Listen/Downloads/EN/Downloads_Formular.html?cl2Categories_TechnologieAnwendungsbereich_name=Verwaltungsschale) and builds an easy-to-use web service based on a custom AAS model instance. If you are not familiar with AAS you can find additional information [here](##about-the-project).
 
 | FA³ST Service is still under development. Contributions in form of issues and pull requests are highly welcome. |
 |-----------------------------|
@@ -42,7 +42,7 @@ To start the Service from command line use the following commands.
 cd /starter/target
 java -jar starter-{version}.jar -m {path/to/your/AASEnvironment}
 ```
-For further information on using the command line see [here](#usage-with-command-line).
+For further information on using the command line see [here](##usage-with-command-line).
 
 #### As Maven Dependency
 ```xml
@@ -97,7 +97,7 @@ Afterwards, you can reach the running FA³ST Service via `http://localhost:8080/
 
 FA³ST Service provides the following functionalities:
 -   supports several dataformats for the Asset Administration Shell Environment: `json, json-ld, xml, aml, rdf, opcua nodeset`
--   easy configuration via JSON file (see [details](#Configuration))
+-   easy configuration via JSON file (see [details](###Configuration))
 -   easily expandable with 3rd party implementations for `endpoint, messagebus, persistence, assetconnection`
 -   uses existing open source implementation of AAS datamodel and de-/serializers [admin-shell-io java serializer](https://github.com/admin-shell-io/java-serializer) and [admin-shell-io java model](https://github.com/admin-shell-io/java-model)
 -   synchronization between multiple endpoints
@@ -105,7 +105,7 @@ FA³ST Service provides the following functionalities:
 
 ## Architecture
 
-<img src="./images/fa3st-service-default-implementations.png" alt="FA³ST Service Logo" >
+<img src="../images/fa3st-service-default-implementations.png" alt="FA³ST Service Logo" >
 
 Fa³ST Service uses an open architecture and defines interfaces for most functionality. This allows for easy extension by 3rd parties. However, FA³ST Service also includes one or more  useful default implementations for each interface:
 
@@ -117,16 +117,15 @@ Fa³ST Service uses an open architecture and defines interfaces for most functio
 
 ## Usage with Command Line
 
-This section provides a short introduction of the most important command line arguments. For more details see the [full documentation](./documentation/commandline.md).
 
-If not already done, follow the step in [Building from Source](#building-from-source).
+If not already done, follow the step in.
 
 1.  Move to the output folder of the starter
 ```sh
 cd starter/target
 ```
 
-2.  Execute the `.jar` file to start a FA³ST Service directly with a default configuration. Replace the `{path/to/your/AASEnvironment}` with your file to the Asset Administration Shell Environment you want to load with the FA³ST Service. If you just want to play around, you can use a example AASEnvironment from us [here](starter/src/test/resources/AASFull.json).
+2.  Execute the `.jar` file to start a FA³ST Service directly with a default configuration. Replace the `{path/to/your/AASEnvironment}` with your file to the Asset Administration Shell Environment you want to load with the FA³ST Service. If you just want to play around, you can use a example AASEnvironment from us [here](https://github.com/FraunhoferIOSB/FAAAST-Service/tree/main/starter/src/test/resources/AASFull.json).
 ```sh
 java -jar starter-{version}.jar -m {path/to/your/AASEnvironment}
 ```
@@ -173,7 +172,7 @@ docker-compose up
 ```
 To use your own AAS environment replace the model file `/misc/examples/demoAAS.json`.
 To modify the configuration edit the file `/misc/examples/exampleConfiguration.json`.
-You can also override configuration values using environment variables [see details](./documentation/commandline.md).
+You can also override configuration values using environment variables
 
 ### Docker CLI
 To start the FA³ST service with an empty AAS environment execute this command.
@@ -256,7 +255,7 @@ ServiceConfig serviceConfig = new ServiceConfig.Builder()
 ```
 
 ### HTTP Endpoint
-This section introduces the HTTP Endpoint implementation. For further details see the [full documentation](./documentation/httpendpoint.md).
+This section introduces the HTTP Endpoint implementation. For further details see the 
 
 The exposed REST API is based on the document [Details of the Asset Administration Shell - Part 2](https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/Details_of_the_Asset_Administration_Shell_Part2_V1.html), and the OpenAPI documentation [DotAAS Part 2 | HTTP/REST | Entire Interface Collection](https://app.swaggerhub.com/apis/Plattform_i40/Entire-Interface-Collection/V1.0RC01).
 
@@ -295,7 +294,7 @@ HTTP GET http://localhost:8080/submodels/aHR0cHM6Ly9hY3BsdC5vcmcvVGVzdF9TdWJtb2R
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### OPC UA Endpoint
-This section introduces the OPC UA Endpoint implementation. For further details see the [full documentation](./documentation/opcuaendpoint.md).
+This section introduces the OPC UA Endpoint implementation. For further details see the 
 
 The OPC UA Endpoint is based on the [OPC UA Companion Specification OPC UA for Asset Administration Shell (AAS)](https://opcfoundation.org/developer-tools/specifications-opc-ua-information-models/opc-ua-for-i4-asset-administration-shell/).
 The release version of this Companion Specification is based on the document [Details of the Asset Administration Shell - Part 1 Version 2](https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/Details_of_the_Asset_Administration_Shell_Part1_V2.html).
@@ -581,7 +580,7 @@ You can automatically format your code by running
 Additionally, you can import the eclipse formatting rules defined in _/codestyle_ into our IDE.
 
 ### Third Party License
-If you use additional dependencies please be sure that the licenses of these dependencies are compliant with our [License](#license). If you are not sure which license your dependencies have, you can run
+If you use additional dependencies please be sure that the licenses of these dependencies are compliant with our [License](##license). If you are not sure which license your dependencies have, you can run
 >mvn license:aggregate-third-party-report
 
 and check the generated report in the directory `documentation/third_party_licenses_report.html`.
