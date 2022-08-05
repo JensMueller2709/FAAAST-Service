@@ -4,9 +4,14 @@
 
 The **F**raunhofer **A**dvanced **A**sset **A**dministration **S**hell **T**ools (**FA³ST**) Service implements the [Asset Administration Shell (AAS) specification from the platform Industrie 4.0](https://www.plattform-i40.de/SiteGlobals/IP/Forms/Listen/Downloads/EN/Downloads_Formular.html?cl2Categories_TechnologieAnwendungsbereich_name=Verwaltungsschale) and builds an easy-to-use web service based on a custom AAS model instance. If you are not familiar with AAS you can find additional information.
 
-FA³ST Service is still under development. Contributions in form of issues and pull requests are highly welcome. 
+| FA³ST Service is still under development. Contributions in form of issues and pull requests are highly welcome. |
+|-----------------------------|
 
 <b>Implemented AAS versions</b>
+| Part | Version | Comment |
+|:--| -- | -- |
+| Part 1 - The exchange of information between partners in the value chain of Industrie 4.0 | Version 3.0RC01* | * We are using the AAS model java implementation from [admin-shell-io](https://github.com/admin-shell-io/java-model) which is based on Version 3.0RC01 but also covers already some aspects from RC02 |
+| Part 2 – Interoperability at Runtime – Exchanging Information via Application Programming Interfaces | Version 1.0RC02 |  |
 
 
 ## Getting Started
