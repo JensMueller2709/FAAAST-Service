@@ -9,24 +9,26 @@ FA³ST Service is still under development. Contributions in form of issues and p
 <b>Implemented AAS versions</b>
 
 
-```{toctree} Getting Started
+```{toctree} 
+:caption: Getting Started
 :maxdepth: 2
-GettingStarted.md
-configuration.md
-commandline.md
-AssetConnection.md
+GettingStarted
+configuration
+commandline
+AssetConnection
 ```
 
 ```{toctree} Architecture
+:caption: Architecture
 :maxdepth: 3
-architecture.md
-httpendpoint.md
-opcuaendpoint.md
-persistence.md
+architecture
+httpendpoint
+opcuaendpoint
+persistence
 ```
 
 ```{toctree} About
+:caption: About
 :maxdepth: 3
-about.md
-AboutTheProject.md
+AboutTheProject
 ```
