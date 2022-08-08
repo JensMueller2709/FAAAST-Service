@@ -17,31 +17,27 @@ Accordingly, each asset connection configuration supports at least this minimum 
 		"{serialized Reference of AAS element}":
 		{
 			// value provider configuration
-		},
-		...
+		}
 	},
 	"operationProviders":
 	{
 		"{serialized Reference of AAS element}":
 		{
 			// operation provider configuration
-		},
-		...
+		}
 	},
 	"subscriptionProviders":
 	{
 		"{serialized Reference of AAS element}":
 		{
 			// subscription provider configuration
-		},
-		...
+		}
 	}
 }
 ```
 
 A concrete example for OPC UA asset connection could look like this
 ```json
-
 {
 	"@class": "de.fraunhofer.iosb.ilt.faaast.service.assetconnection.opcua.OpcUaAssetConnection",
 	"host": "opc.tcp://localhost:4840",
