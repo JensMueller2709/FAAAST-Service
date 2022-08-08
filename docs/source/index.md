@@ -18,7 +18,7 @@ commandline
 AssetConnection
 ```
 
-```{toctree} Architecture
+```{toctree} 
 :caption: Architecture
 :maxdepth: 3
 architecture
@@ -27,7 +27,7 @@ opcuaendpoint
 persistence
 ```
 
-```{toctree} About
+```{toctree} 
 :caption: About
 :maxdepth: 3
 AboutTheProject
