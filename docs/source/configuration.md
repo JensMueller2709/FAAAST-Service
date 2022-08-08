@@ -2,7 +2,7 @@
 This section gives a short introduction how the configuration file works.
 
 The basic structure of a configuration is the following
-```
+```json
 {
 	"core" : {
 		"requestHandlerThreadPoolSize" : [integer]
